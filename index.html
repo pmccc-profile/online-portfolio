@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="Online Portfolio">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="PMCCC">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&family=Vast+Shadow&display=swap');
+        </style>
+        
+        <link rel="stylesheet" href="styles.css" />
+        
+        <title>Online Portfolio</title>
+        
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <!--<a href="index.html"><img src="files/img/codecoffeelogo_bypmccc.png" alt="logo"/></a>-->
+                <h1>PMCCC</h1>
+                <h3>someone who enjoys <em style="color: #569d56">programming</em> and drinking <em style="color: rgb(187, 101, 40)">coffee</em></h3>
+            </div>
+        </header>
+        
+        <section id="projects">
+                <div class="container">
+                    <div class="web-projects">
+                        <h2 class="proj1_h2">UX / UI DESIGN</h2>
+                        <div class="proj-content">              
+                            <div class="proj-img">
+                                <img src="files/img/ux ui design/htmlcssjs/bugsnerrors.png" />
+                            </div>                
+                            <div class="proj-desc">
+                                <h3><b>HTML / CSS / JS</b></h3>
+                                <p><b>Title:</b> Bugs N Erros</p>
+                                <p><b>Content:</b> Engaging brief interactive tutorials about the basics of C++, R, and SQL.</p>
+                                <p><b>Device:</b> ACER Aspire AV15-15</p>
+                                <p><b>OS:</b> Windows 11 Home Single Language</p>
+                                <p><b>IDE:</b> Phoenix Code (Online)</p>
+                                <button id="bne" class="button" onmousedown="liveDemo()" onmouseover="projImg_hover()" onmouseout="projImg_nohover()">
+                                <span><img src="files/img/coffeebean_light.png" class="projImg"/></span>Live Demo</button>
+                            </div>
+                        </div>
+                        <div class="proj-content">              
+                            <div class="proj-img">
+                                <img src="files/img/ux ui design/htmlcssjs/pingme.png" />
+                            </div>                
+                            <div class="proj-desc">
+                                <h3><b>HTML / CSS / JS</b></h3>
+                                <p><b>Title:</b> Coffee Minute</p>
+                                <p><b>Content:</b> Bridging connection and support between the audience and the author by refilling a cup of coffee.</p>
+                                <p><b>Device:</b> ACER Aspire AV15-15</p>
+                                <p><b>OS:</b> Windows 11 Home Single Language</p>
+                                <p><b>IDE:</b> Phoenix Code (Online)</p>
+                                <button id="pingme" class="button" onmousedown="liveDemo()" onmouseover="projImg_hover()" onmouseout="projImg_nohover()">
+                                <span><img src="files/img/coffeebean_light.png" class="projImg"/></span>Live Demo</button>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="sysprog-projects">
+                        <h2 class="proj2_h2">SOFTWARE PROGRAMS</h2>
+                        <div class="proj-content">              
+                            <div class="proj-img">
+                                <img src="files/img/software%20programs/cpp/ytplaylistgenerator_thumbnail.png"/>
+                            </div>                
+                            <div class="proj-desc">
+                                <h3><b>C++ Programming</b></h3>
+                                <p><b>Title:</b> YT Playlist Generator</p>
+                                <p><b>Content:</b> Automatic and quick generation of YT playlist without signing in.</p>
+                                <p><b>Device:</b> ACER Aspire AV15-15 | HP Laptop 15s-eq2xxx</p>
+                                <p><b>OS:</b> Windows 11 Home Single Language</p>
+                                <p><b>IDE:</b> Online C++ Compiler | CodeBlocks</p>
+                                <button id="playdemo" class="button" onmousedown="popModal()" onmouseover="projImg_hover1()" onmouseout="projImg_nohover1()">
+                                <span><img src="files/img/coffeebean_light.png" class="projImg"/></span>Play Demo</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div id="appModal">
+                    <div class="appModal-content">                    
+                        <span class="close-btn">&times;</span>
+                        <!--
+                        <video class="cpp_vid" width="100%" height="500" controls>
+                          <source src="files/vid/software programs/cpp/cpp_programs.mp4" type="video/mp4">
+                          <source src="files/vid/software programs/cpp/cpp_programs.ogg" type="video/ogg">
+                        </video>
+                        -->
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/zloACRRVU2Y?si=MmCMB_TH1gvGUUgG" title="YouTube video player" 
+                            border="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+        </section>
+        
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <img src="files/img/avatar.png" />
+                <div class="closingRemark">
+                    <p><em>With limited knowledge comes great curiousity.</em></p>
+                    <p>Driven to expand horizons and maximize potential.</p>
+                </div>
+                </div>    
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <a href="https://www.sololearn.com/profile/31811505/?ref=app" target="_blank">
+                        <img src="files/img/sololearn_resized.png"></a>
+                    <a href="https://github.com/pmccc-profile" target="_blank">
+                        <img src="files/img/github_resized.png"></a>
+                </div>            
+            </div>
+        </section>
+        
+        <footer id="main-footer">
+            <div class="container">
+                Copyright 2024 - 2025. PMCCC.
+            </div>
+        </footer>
+        
+        <script src="script.js" defer></script>
+        
+    </body>
+</html>
